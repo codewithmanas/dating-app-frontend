@@ -5,6 +5,7 @@ export function findSimilarProfiles(
   originalUser: User,
   count: number = 3
 ): User[] {
+  
   const otherUsers = mockUsers.filter((user) => user.id !== originalUser.id);
 
   return otherUsers
