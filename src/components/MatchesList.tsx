@@ -5,11 +5,11 @@ interface MatchesListProps {
 }
 
 export function MatchesList({ matches }: MatchesListProps) {
-//   if (matches.length === 0) return null;
-  if (matches.length === 0) return "No matches found";
+  if (matches.length === 0) return null;
+  // if (matches.length === 0) return "No matches found";
 
   return (
-    <div className="mt-12">
+    <div className="mt-12 mb-8">
       <div className="glass-card p-6">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Your Matches</h2>
         <div className="flex gap-4 overflow-x-auto pb-4">

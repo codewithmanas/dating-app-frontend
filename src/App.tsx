@@ -51,6 +51,9 @@ function App() {
       <Header />
       
       <main className="max-w-6xl mx-auto px-4">
+
+      <MatchesList matches={matches} />
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {mockUsers
             .filter(user => user.id !== currentUser.id)
@@ -63,7 +66,6 @@ function App() {
             ))}
         </div>
 
-        <MatchesList matches={matches} />
       </main>
     </div>
   );
